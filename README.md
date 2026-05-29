@@ -60,9 +60,9 @@ python tokenize_cli.py --tokenizer WordPiece --text "Hello world"
 python tokenize_cli.py --tokenizer SentencePiece --text "Hello world"
 
 # Decode (pass space-separated tokens)
-python tokenize_cli.py --tokenizer BPE --mode decode --text "ĠHello Ġworld"
-python tokenize_cli.py --tokenizer WordPiece --mode decode --text "Hello world"
-python tokenize_cli.py --tokenizer SentencePiece --mode decode --text "▁Hello ▁world"
+python tokenize_cli.py --tokenizer BPE --mode decode --text "ĠH ell o Ġwor ld"
+python tokenize_cli.py --tokenizer WordPiece --mode decode --text "He ##ll ##o wor ##ld"
+python tokenize_cli.py --tokenizer SentencePiece --mode decode --text "▁He ll o ▁world"
 ```
 
 #### CLI flags
